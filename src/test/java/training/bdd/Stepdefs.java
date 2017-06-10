@@ -20,7 +20,6 @@ public class Stepdefs {
     public void no_objects_are_added_to_the_board() throws Throwable {
     }
 
-
     @When("^a square is added to the board$")
     public void a_square_is_added_to_the_board() throws Throwable {
         a_square_with_sides_length_is_added_to_the_board(2);
@@ -32,8 +31,13 @@ public class Stepdefs {
         board.add(shape);
     }
 
+    @When("^a circle is added to the board$")
+    public void a_circle_is_added_to_the_board() throws Throwable {
+        a_circle_with_radius_is_added_to_the_board(5);
+    }
+
     @When("^a circle with radius (\\d+) is added to the board$")
-    public void aCircleWithRadiusIsAddedToTheBoard(int radius) throws Throwable {
+    public void a_circle_with_radius_is_added_to_the_board(int radius) throws Throwable {
         Circle circle = new Circle(radius);
         board.add(circle);
     }
