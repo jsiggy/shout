@@ -1,8 +1,12 @@
-package training.bdd;
+package features;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import training.bdd.Board;
+import training.bdd.Circle;
+import training.bdd.Shape;
+import training.bdd.Square;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
